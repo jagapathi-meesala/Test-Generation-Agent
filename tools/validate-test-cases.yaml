@@ -1,0 +1,16 @@
+name: validate-test-cases
+description: Validate generated test case structures.
+version: 1.0.0
+input_schema:
+  type: object
+  properties:
+    cases:
+      type: array
+      items: {type: object}
+  required: [cases]
+output_schema:
+  type: object
+implementation:
+  type: script
+  path: tools/validate-test-cases.py
+  runtime: python3

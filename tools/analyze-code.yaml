@@ -1,0 +1,15 @@
+name: analyze-code
+description: Analyze supported Python source structure without executing it.
+version: 1.0.0
+input_schema:
+  type: object
+  properties:
+    source: {type: string, minLength: 1}
+    language: {type: string, enum: [python]}
+  required: [source, language]
+output_schema:
+  type: object
+implementation:
+  type: script
+  path: tools/analyze-code.py
+  runtime: python3

@@ -1,0 +1,11 @@
+spec_version: "0.1.0"
+name: test-generation-agent
+version: 0.1.0
+description: A deterministic framework-independent agent for analyzing source code and generating structured test cases.
+skills:
+  - test-generation
+  - test-analysis
+tools:
+  - analyze-code
+  - generate-test-cases
+  - validate-test-cases
